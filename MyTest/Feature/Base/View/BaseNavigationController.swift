@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseNavigationController: UINavigationController {
+class BaseNavigationController: ScrollingNavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,8 @@ class BaseNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
+        } else {
+            viewController.hidesBottomBarWhenPushed = false
         }
         super.pushViewController(viewController, animated: animated)
         

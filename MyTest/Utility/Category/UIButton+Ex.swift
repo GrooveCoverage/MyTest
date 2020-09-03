@@ -17,7 +17,7 @@ enum ButtonImageTitleStyle: Int {
 
 extension UIButton {
     //圆角按钮
-    static func cornerButton(title: String, titleColor: UIColor = UIColor.white, fontSize: CGFloat = 16, bgColor: UIColor = Colors.color_009944, cornerRadius: CGFloat = 10) -> UIButton {
+    static func cornerButton(title: String, titleColor: UIColor? = Colors.white, fontSize: CGFloat = 16, bgColor: UIColor? = Colors.color_009944, cornerRadius: CGFloat = 10) -> UIButton {
         let button = UIButton(type: .custom)
         button.setTitle(title, for: .normal)
         button.setTitleColor(titleColor, for: .normal)

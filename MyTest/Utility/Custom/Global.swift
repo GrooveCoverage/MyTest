@@ -4,7 +4,7 @@
 //
 //  Created by GC on 2019/10/27.
 //  Copyright © 2019 nsf. All rights reserved.
-//
+//  全局调用
 
 import UIKit
 
