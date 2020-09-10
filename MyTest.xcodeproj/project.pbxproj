@@ -334,7 +334,6 @@
 				5B884A79244DC39B00551393 /* Center */,
 				5BB63BF22369B2DB00E820C7 /* Me */,
 				5BACE4D0235F2F310025737B /* Main */,
-				5BACE4CF235F2EB80025737B /* Base */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -353,6 +352,7 @@
 		5BACE4CA235F2D940025737B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5BACE4CF235F2EB80025737B /* Base */,
 				5BACE4C9235F2D5F0025737B /* Custom */,
 				5BCFB63F2365EF8E0068D632 /* Vendor */,
 				5BCFB6322365DECF0068D632 /* Category */,
