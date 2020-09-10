@@ -388,7 +388,8 @@ open class ESRefreshFooterView: ESRefreshComponent {
     open override func sizeChangeAction(object: AnyObject?, change: [NSKeyValueChangeKey : Any]?) {
         guard let scrollView = scrollView else { return }
         super.sizeChangeAction(object: object, change: change)
-        let targetY = scrollView.contentSize.height + scrollViewInsets.bottom
+//        let targetY = scrollView.contentSize.height + scrollViewInsets.bottom      //原代码
+        let targetY = scrollView.contentSize.height   //我修改的代码
         if self.frame.origin.y != targetY {
             var rect = self.frame
             rect.origin.y = targetY

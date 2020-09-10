@@ -7,6 +7,7 @@
 //  全局调用
 
 import UIKit
+import KeychainAccess
 
 class Global {
     static let shared = Global()

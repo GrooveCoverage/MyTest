@@ -17,7 +17,7 @@ class MainViewController: BaseTableViewController {
     override func addPullToRefresh() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.stopPullToRefresh()
-            self?.showNavgationBar()
+//            self?.showNavgationBar()
             GCLog("header stop")
         }
     }

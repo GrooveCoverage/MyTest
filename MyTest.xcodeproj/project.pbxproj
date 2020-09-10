@@ -10,13 +10,14 @@
 		5B17851F24852FE000272141 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5B17851E24852FE000272141 /* SnapKit */; };
 		5B17852124852FE700272141 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5B17852024852FE700272141 /* Kingfisher */; };
 		5B17852324852FEB00272141 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B17852224852FEB00272141 /* IQKeyboardManagerSwift */; };
-		5B17852724852FF400272141 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 5B17852624852FF400272141 /* Moya */; };
 		5B17852924852FFA00272141 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 5B17852824852FFA00272141 /* Lottie */; };
+		5B50ED0C25062A6C007F0070 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5B50ED0B25062A6C007F0070 /* RxMoya */; };
 		5B7E579423313FE3005283AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E579323313FE3005283AF /* AppDelegate.swift */; };
 		5B7E579B23313FE4005283AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E579A23313FE4005283AF /* Assets.xcassets */; };
 		5B7E579E23313FE4005283AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E579C23313FE4005283AF /* LaunchScreen.storyboard */; };
 		5B7E57A923313FE5005283AF /* MyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E57A823313FE5005283AF /* MyTestTests.swift */; };
 		5B7E57B423313FE5005283AF /* MyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E57B323313FE5005283AF /* MyTestUITests.swift */; };
+		5B85A9CD250538C70051BA62 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 5B85A9CC250538C70051BA62 /* KeychainAccess */; };
 		5B884A6E244DBCA400551393 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B884A65244DBCA400551393 /* Localizable.strings */; };
 		5B884A6F244DBCA400551393 /* ESTabBarItemMoreContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B884A67244DBCA400551393 /* ESTabBarItemMoreContentView.swift */; };
 		5B884A70244DBCA400551393 /* ESTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B884A68244DBCA400551393 /* ESTabBarController.swift */; };
@@ -51,7 +52,6 @@
 		5BCFB63A2365EA050068D632 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFB6392365EA050068D632 /* String+Ex.swift */; };
 		5BCFB63C2365EAB30068D632 /* UIResponder+FirstResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFB63B2365EAB30068D632 /* UIResponder+FirstResponder.swift */; };
 		5BCFB63E2365EC2E0068D632 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFB63D2365EC2E0068D632 /* Global.swift */; };
-		5BCFB6442365F0160068D632 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFB6432365F0160068D632 /* Keychain.swift */; };
 		5BCFB6482365F72F0068D632 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCFB6472365F72F0068D632 /* Common.swift */; };
 		5BD43BB02362AD1C008C0938 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD43BAF2362AD1C008C0938 /* BaseNavigationController.swift */; };
 		5BD43BB22362AD72008C0938 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD43BB12362AD72008C0938 /* MainViewController.swift */; };
@@ -124,7 +124,6 @@
 		5BCFB6392365EA050068D632 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		5BCFB63B2365EAB30068D632 /* UIResponder+FirstResponder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+FirstResponder.swift"; sourceTree = "<group>"; };
 		5BCFB63D2365EC2E0068D632 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		5BCFB6432365F0160068D632 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		5BCFB6472365F72F0068D632 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		5BD43BAF2362AD1C008C0938 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		5BD43BB12362AD72008C0938 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -140,8 +139,9 @@
 			files = (
 				5B17852124852FE700272141 /* Kingfisher in Frameworks */,
 				5B17851F24852FE000272141 /* SnapKit in Frameworks */,
+				5B85A9CD250538C70051BA62 /* KeychainAccess in Frameworks */,
 				5B17852324852FEB00272141 /* IQKeyboardManagerSwift in Frameworks */,
-				5B17852724852FF400272141 /* Moya in Frameworks */,
+				5B50ED0C25062A6C007F0070 /* RxMoya in Frameworks */,
 				5B17852924852FFA00272141 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,17 +472,8 @@
 				5B90EA9224C0486900B981BF /* ESPullToRefresh */,
 				5BC48DA52451D8E1008415D9 /* AMScrollingNavbar */,
 				5B884A64244DBCA400551393 /* ESTabBarController */,
-				5BCFB6402365EFE80068D632 /* Keychain */,
 			);
 			path = Vendor;
-			sourceTree = "<group>";
-		};
-		5BCFB6402365EFE80068D632 /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-				5BCFB6432365F0160068D632 /* Keychain.swift */,
-			);
-			path = Keychain;
 			sourceTree = "<group>";
 		};
 		5BD981AC244CA44B00645748 /* Frameworks */ = {
@@ -513,8 +504,9 @@
 				5B17851E24852FE000272141 /* SnapKit */,
 				5B17852024852FE700272141 /* Kingfisher */,
 				5B17852224852FEB00272141 /* IQKeyboardManagerSwift */,
-				5B17852624852FF400272141 /* Moya */,
 				5B17852824852FFA00272141 /* Lottie */,
+				5B85A9CC250538C70051BA62 /* KeychainAccess */,
+				5B50ED0B25062A6C007F0070 /* RxMoya */,
 			);
 			productName = MyTest;
 			productReference = 5B7E579023313FE3005283AF /* MyTest.app */;
@@ -596,6 +588,7 @@
 				5B8B783D2367D7650007AE2E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				5B8B78402367D8D90007AE2E /* XCRemoteSwiftPackageReference "Moya" */,
 				5B884A76244DC35E00551393 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				5B85A9CB250538C70051BA62 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 5B7E579123313FE3005283AF /* Products */;
 			projectDirPath = "";
@@ -649,7 +642,6 @@
 				5B884A70244DBCA400551393 /* ESTabBarController.swift in Sources */,
 				5B90EAA524C0486A00B981BF /* ESRefreshHeaderAnimator.swift in Sources */,
 				5BCFB63A2365EA050068D632 /* String+Ex.swift in Sources */,
-				5BCFB6442365F0160068D632 /* Keychain.swift in Sources */,
 				5B884A75244DBCA400551393 /* ESTabBarItemContainer.swift in Sources */,
 				5B90EAA924C0486A00B981BF /* ES.swift in Sources */,
 				5BCFB6342365DEEE0068D632 /* UIColor+Hex.swift in Sources */,
@@ -1028,6 +1020,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5B85A9CB250538C70051BA62 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		5B884A76244DC35E00551393 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
@@ -1086,15 +1086,20 @@
 			package = 5B8B783D2367D7650007AE2E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		5B17852624852FF400272141 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5B8B78402367D8D90007AE2E /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
 		5B17852824852FFA00272141 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5B884A76244DC35E00551393 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		5B50ED0B25062A6C007F0070 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B8B78402367D8D90007AE2E /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		5B85A9CC250538C70051BA62 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B85A9CB250538C70051BA62 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

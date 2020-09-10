@@ -11,8 +11,8 @@ import UIKit
 class BaseTableViewController: BaseViewController {
     final var isInitial = false
     static let navigtaionBarDelay = 50.0
-    
     static let baseCellIdentifier = "baseCellIdentifier"
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.backgroundColor = UIColor.lightGray
@@ -34,13 +34,14 @@ class BaseTableViewController: BaseViewController {
         let tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 0.01))
         tableView.tableFooterView = tableFooterView
         
-        view.addSubview(tableView)
         return tableView
     }()
     
     //MARK: **************生命周期*********************
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(tableView)
         
         tableView.snp.makeConstraints { (maker) in
             maker.edges.equalTo(view)
@@ -55,21 +56,24 @@ class BaseTableViewController: BaseViewController {
             self?.addInfiniteScrolling()
         };
         
+        
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        if let navigationController = navigationController as? ScrollingNavigationController {
-           navigationController.shouldUpdateContentInset = false
-            navigationController.followScrollView(tableView, delay: BaseTableViewController.navigtaionBarDelay)
-        }
-    }
+//
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        follwingScrollView()
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        stopFollowingScrollView()
+//    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+
         if !isInitial {
             isInitial = true
             let statusHeight = UIApplication.shared.statusBarFrame.height
@@ -113,7 +117,14 @@ extension BaseTableViewController {
         }
     }
     
-    func stopFollowingScrollView(_ showingNavbar: Bool = false) {
+    func follwingScrollView() {
+        if let navigationController = navigationController as? ScrollingNavigationController {
+            navigationController.shouldUpdateContentInset = false
+            navigationController.followScrollView(tableView, delay: BaseTableViewController.navigtaionBarDelay)
+        }
+    }
+    
+    func stopFollowingScrollView(_ showingNavbar: Bool = true) {
         if let navigationController = navigationController as? ScrollingNavigationController {
             navigationController.stopFollowingScrollView(showingNavbar: showingNavbar)
         }
